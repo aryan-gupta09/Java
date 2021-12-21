@@ -1,0 +1,937 @@
+Solve any character pattern program in Java
+
+Categories
+
+character patterns
+
+Watch our video on How to solve any character patterns Program in Java – Click Here
+
+1. Write a python program to print following character pattern: 
+
+A 
+
+A A 
+
+A A A 
+
+A A A A 
+
+A A A A A
+
+Code:
+
+public class CharacterPattern
+
+{
+
+   public static void main(String[] args) 
+
+   {
+
+      int n=5; 
+
+      for(int i=1; i<=n; i++){
+
+        for(int j=1; j<=i; j++){
+
+           System.out.print("A ");
+
+        }
+
+        System.out.println();
+
+     }
+
+  } 
+
+}
+
+2. Write a python program to print following pattern: 
+
+A 
+
+B B 
+
+C C C 
+
+D D D D 
+
+E E E E E 
+
+Code:
+
+public class CharacterPattern
+
+{
+
+   public static void main(String[] args) 
+
+   {
+
+      int n=5;
+
+      for(int i=1, p='A'; i<=n; i++, p++){
+
+        for(int j=1; j<=i; j++){
+
+          System.out.print((char)p+"");
+
+        }
+
+        System.out.println();
+
+     }
+
+  }
+
+}
+
+3. Write a python code to print following character pattern: 
+
+A 
+
+C C 
+
+E E E 
+
+G G G G 
+
+I I I I I 
+
+Code:      
+
+public class CharacterPattern
+
+{
+
+   public static void main(String[] args) 
+
+   {
+
+      int n=5;
+
+      for(int i=1, p='E'; i<=n; i++, p+=2){
+
+        for(int j=1; j<=i; j++){
+
+           System.out.print((char)p+"");
+
+        }
+
+        System.out.println();
+
+      }
+
+   }
+
+}
+
+4. Write a python code to print following pattern: 
+
+E
+
+D D
+
+C C C
+
+B B B B
+
+A A A A A
+
+Code:
+
+public class CharacterPattern 
+
+{ 
+
+    public static void main(String[] args) 
+
+    { 
+
+       int n=5;
+
+       for(int i=1, p='E'; i<=n; i++, p--){
+
+         for(int j=1; j<=i; j++){  
+
+           System.out.print((char)p+"");
+
+         }
+
+         System.out.println();
+
+       } 
+
+   }
+
+}
+
+4. Write a python code to print following pattern: 
+
+A 
+
+B B 
+
+A A A 
+
+B B B B 
+
+A A A A A
+
+Code:
+
+public class CharacterPattern 
+
+{
+
+  public static void main(String[] args)
+
+  {
+
+    int n=5;
+
+    for(int i=1; i<=n; i++){
+
+      for(int j=1; j<=i; j++){
+
+        if(i%2==0)
+
+          System.out.print("B ");
+
+        else
+
+          System.out.print("A ");
+
+       }
+
+       System.out.println();
+
+    }
+
+  }
+
+}
+
+5. Write a python program to print following character pattern: 
+
+Z Z Z Z Z 
+
+  0 0 0 0 
+
+    Z Z Z 
+
+      0 0 
+
+        Z
+
+Code:
+
+public class CharacterPattern
+
+{
+
+  public static void main(String[] args) 
+
+  {
+
+     int n=5;
+
+     for(int i=1; i<=n;i++){
+
+       int p=5;
+
+       for(int j=1; j<=i; j++){
+
+         if(i%2==0)
+
+           System.out.print("0 ");
+
+         else
+
+           System.out.print("Z ");
+
+       }
+
+       System.out.println();
+
+     }
+
+   }
+
+}
+
+6. Write a python program to print following Dimond character pattern: 
+
+          A 
+
+        B B B 
+
+      C C C C C 
+
+    D D D D D D D 
+
+  E E E E E E E E E 
+
+    D D D D D D D 
+
+      C C C C C 
+
+        B B B 
+
+          A 
+
+Code:
+
+public class CharacterPattern
+
+{
+
+   public static void main(String[] args) 
+
+   {
+
+     int n= 5;
+
+     for(int i=1, p= 'A'; i<=n; i++, p++){
+
+       for(int j=i; j<=n; j++){
+
+         System.out.print(" ");
+
+       }
+
+       for(int j=1; j<i; j++){
+
+         System.out.print((char)p +" ");
+
+       }
+
+       for(int j=1; j<=i; j++){
+
+         System.out.print((char)p +" ");
+
+       }
+
+       System.out.println();
+
+    }
+
+    for(int i=1, p='E'; i<=n; i++, p--){
+
+      for(int j=1; j<=i; j++){
+
+        System.out.print(" ");
+
+      }
+
+      for(int j=i; j<n; j++){
+
+        System.out.print((char)p +" ");
+
+      }
+
+      for(int j=i; j<=n; j++){
+
+        System.out.print((char)p +" ");
+
+      }
+
+      System.out.println();
+
+    }
+
+  }
+
+}
+
+7. Write a python program to print following character pattern: 
+
+         A
+
+       B B B
+
+     C C C C C
+
+   D D D D D D D
+
+ E E E E E E E E E 
+
+   F F F F F F F
+
+     G G G G G
+
+       H H H
+
+         I
+
+Code:
+
+public class CharacterPattern
+
+{
+
+  public static void main(String[] args)
+
+  {
+
+    int n= 5,p='A;
+
+    for(int i=1; i<n; i++, p++){
+
+      for(int j=i; j<=n; j++){
+
+        System.out.print(" ");
+
+      }
+
+      for(int j=1; j<i; j++){
+
+        System.out.print((char)p +" ");
+
+      }
+
+      for(int j=1; j<=i; j++){
+
+        System.out.print((char)p +" ");
+
+      }
+
+      System.out.println();
+
+    }
+
+    for(int i=1; i<=n; i++, p++){
+
+      for(int j=1; j<=i; j++){
+
+        System.out.print(" ");
+
+      }
+
+      for(int j=i; j<n; j++){
+
+        System.out.print((char)p +" ");
+
+      }
+
+      for(int j=i; j<=n; j++){
+
+        System.out.print((char)p +" ");
+
+      }
+
+      System.out.println();
+
+    }
+
+  }
+
+}
+
+8. Write a python code to print Dimond pattern with character: 
+
+A 
+
+A B 
+
+A B C 
+
+A B C D 
+
+A B C D E 
+
+Code:
+
+public class CharacterPattern
+
+{
+
+   public static void main(String[] args) 
+
+   {
+
+      int n=5;
+
+      for(int i=1; i<=n; i++){
+
+        int p='A';
+
+        for(int j=1; j<=i; j++){
+
+          System.out.print((char)p++ +" ");
+
+        }
+
+        System.out.println();
+
+     }
+
+  }
+
+}
+
+9. Write a python code to print following character pattern : 
+
+A B C D E 
+
+  A B C D 
+
+    A B C 
+
+      A B 
+
+        A
+
+Code:
+
+public class CharacterPattern
+
+{
+
+   public static void main(String[] args) 
+
+   {
+
+      int n= 5;
+
+      for(int i=1; i<=n; i++){
+
+        int p ='A';
+
+        for(int j=1; j<=i; j++){
+
+          System.out.print(" ");
+
+        }
+
+        for(int j=i; j<=n; j++){
+
+          System.out.print((char)p++ +" ");
+
+        }
+
+        System.out.println();
+
+     }
+
+  }
+
+}
+
+10. Write a python code to print hill pattern with character: 
+
+          A  
+
+        A B C  
+
+      A B C D E  
+
+    A B C D E F G  
+
+  A B C D E F G H I 
+
+Code:
+
+public class CharacterPattern 
+
+{ 
+
+   public static void main(String[] args) 
+
+   {  
+
+      int n= 5; 
+
+      for(int i=1; i<=n; i++){ 
+
+         int p ='A'; 
+
+         for(int j=i; j<=n; j++){    
+
+            System.out.print(" "); 
+
+         } 
+
+         for(int j=1; j<i; j++){ 
+
+            System.out.print((char)p++ +" "); 
+
+         } 
+
+         for(int j=1; j<=i; j++){ 
+
+            System.out.print((char)p++ +" "); 
+
+         } 
+
+         System.out.println(); 
+
+      } 
+
+   } 
+
+}
+
+11. Write a python code to print following character pattern : 
+
+E 
+
+E D 
+
+E D C 
+
+E D C B 
+
+E D C B A 
+
+Code:
+
+public class CharacterPattern 
+
+{
+
+ public static void main(String[] args)
+
+ { int n=5;
+
+   for(int i=1; i<=n; i++){
+
+      int p='E';
+
+      for(int j=1; j<=i; j++){ 
+
+        System.out.print((char)p – +" ");
+
+      } System.out.println();
+
+    }
+
+  }
+
+ }
+
+12. Write a python code to print following pattern with character: 
+
+E D C B A 
+
+  D C B A 
+
+    C B A 
+
+      B A 
+
+        A 
+
+Code:
+
+public class CharacterPattern
+
+{
+
+   public static void main(String[] args) 
+
+   {
+
+      int n=5;
+
+      for(int i=1,k='E'; i<=n;i++,k--){
+
+        int p=k;
+
+        for(int j=1; j<=i; j++){
+
+          System.out.print(" ");
+
+        }
+
+        for(int j=i; j<=n; j++){
+
+          System.out.print((char)p – +" ");
+
+        }
+
+        System.out.println();
+
+      }
+
+   }
+
+}
+
+13. Write a python code to print following hill pattern with character: 
+
+          A 
+
+        A B A 
+
+      A B C B A 
+
+    A B C D C B A 
+
+  A B C D E D C B A 
+
+Code:
+
+public class CharacterPattern
+
+{
+
+   public static void main(String[] args) 
+
+   {
+
+      int n= 5;
+
+      for(int i=1; i<=n; i++){
+
+         int p ='A';
+
+         for(int j=i; j<=n; j++){
+
+            System.out.print(" ");
+
+         }
+
+         for(int j=1; j<i; j++){
+
+           System.out.print((char)p++ +" ");
+
+         }
+
+         for(int j=1; j<=i; j++){
+
+           System.out.print((char)p – +" ");
+
+         }
+
+         System.out.println();
+
+      }
+
+   }
+
+}
+
+14. Write a python code to print following pattern with given word, where word= ‘CODER’. 
+
+C 
+
+O O 
+
+D D D 
+
+E E E E 
+
+R R R R R
+
+Code:
+
+public class CharacterPattern
+
+{
+
+    public static void main(String[] args) 
+
+    {
+
+       String s = "CODER";
+
+       int n= s.length();
+
+       for(int i=1,p=0; i<=n; i++,p++){
+
+          for(int j=1; j<=i; j++){
+
+             System.out.print(s.charAt(p) +" ");
+
+          }
+
+          System.out.println();
+
+       }
+
+   }
+
+}
+
+15. Write a python code to print following character pattern with given word, where word= ‘CODER’. 
+
+R 
+
+E E 
+
+D D D 
+
+O O O O 
+
+C C C C C
+
+Code:
+
+public class CharacterPattern
+
+{
+
+   public static void main(String[] args) 
+
+   {
+
+      String s = "CODER";
+
+      int n= s.length();
+
+      for(int i=1, p=4; i<=n; i++, p--){
+
+        for(int j=1; j<=i; j++){
+
+           System.out.print(s.charAt(p) +" ");
+
+        }
+
+        System.out.println();
+
+     }
+
+  }
+
+}
+
+16. Write a python code to create following pattern with given string. where string : ‘CODER’. 
+
+C 
+
+C O 
+
+C O D 
+
+C O D E 
+
+C O D E R
+
+Code:
+
+public class CharacterPattern
+
+{
+
+   public static void main(String[] args) 
+
+   {
+
+      String s = "CODER";
+
+      int n= s.length();
+
+      for(int i=1; i<=n; i++){
+
+         for(int j=1, p=0; j<=i; j++,p++){
+
+            System.out.print(s.charAt(p) +" ");
+
+         }
+
+         System.out.println();
+
+      }
+
+   }
+
+}
+
+17. Write a python code to print following character pattern with given string. where string= ‘CODER’. 
+
+R 
+
+R E 
+
+R E D 
+
+R E D O 
+
+R E D O C
+
+Code:
+
+public class CharacterPattern
+
+{
+
+   public static void main(String[] args) 
+
+   {
+
+      String s = "CODER";
+
+      int n= s.length();
+
+      for(int i=1; i<=n; i++){
+
+         for(int j=1, p=4; j<=i; j++){
+
+            System.out.print(s.charAt(p--) +" ");
+
+         }
+
+         System.out.println();
+
+     }
+
+  }
+
+}
+
+18. Write a python code to print following pattern with given word.
+
+       word : ‘CODER’ 
+
+R E D O C 
+
+  E D O C 
+
+    D O C 
+
+      O C 
+
+        C
+
+Code:
+
+public class CharacterPattern
+
+{
+
+   public static void main(String[] args) 
+
+   {
+
+      String s = "CODER";
+
+      int n= s.length();
+
+      for(int i=1, k=4; i<=n; i++, k--){
+
+         int p =k;
+
+         for(int j=1; j<=i; j++){
+
+            System.out.print(" ");
+
+         }
+
+         for(int j=i; j<=n; j++){ 
+
+            System.out.print(s.charAt(p--) +" ");
+
+         }
+
+         System.out.println();
+
+      }
+
+   }
+
+}
+
+Share:
+
+author avatar
