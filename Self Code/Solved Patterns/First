@@ -1,4 +1,4 @@
-Star Pattern Programs In java
+#Star Pattern Programs In java
 
  
 
@@ -128,13 +128,13 @@ public class DecreasingTriangle
 
 4. Write a python code to print following pattern: 
 
-                                *
+                            *
 
-                        *      *
+                     *      *
 
-                *      *      *
+              *      *      *
 
-        *      *      *      *
+       *      *      *      *
 
 *      *      *      *      *      
 
@@ -182,13 +182,13 @@ public class RightStarTriangle
 
 *      *      *      *      *
 
-        *      *      *      *
+       *      *      *      *
 
-                *      *      *
+              *      *      *
 
-                        *      *
+                     *      *
 
-                                *    
+                            *    
 
 Code:
 
@@ -228,13 +228,13 @@ public class RightStarTriangle
 
                                 *
 
-                        *      *      *
+                         *      *      *
 
-                *      *      *      *      *
+                  *      *      *      *      *
 
-        *      *      *      *      *      *      *
+           *      *      *      *      *      *      *
 
-*      *      *      *      *      *      *      *      *  
+    *      *      *      *      *      *      *      *      *  
 
 Code:
 
@@ -286,13 +286,13 @@ public class StarPyramid
 
 *      *      *      *      *      *      *      *      *
 
-        *      *      *      *      *      *      *
+       *      *      *      *      *      *      *
 
-                *      *      *      *      *
+              *      *      *      *      *
 
-                        *      *      *
+                     *      *      *
 
-                                *    
+                            *    
 
 Code:
 
@@ -336,23 +336,23 @@ public class StarRe Hill
 
 8. Write a python code to print Dimond pattern with star: 
 
-                                *
+                            *
 
-                        *      *      *
+                     *      *      *
 
-                *      *      *      *      *
+              *      *      *      *      *
 
-        *      *      *      *      *      *      * 
+       *      *      *      *      *      *      * 
 
 *      *      *      *      *      *      *      *      *
 
-        *      *      *      *      *      *      *
+       *      *      *      *      *      *      *
 
-                *      *      *      *      *
+              *      *      *      *      *
 
-                        *      *      *
+                     *      *      *
 
-                                *    
+                            *    
 
 Code:
 
@@ -426,23 +426,23 @@ public class StarPyramid
 
 9. Write a python code to print Butterfly pattern with star: 
 
-*                                                              *
+*                                                         *
 
-*      *                                               *      *     
+*      *                                           *      *     
 
-*      *      *                               *      *      *     
+*      *      *                             *      *      *     
 
 *      *      *      *               *      *      *      *     
 
-*      *      *      *      *       *      *      *      *     
+*      *      *      *      *        *      *      *      *     
 
 *      *      *      *               *      *      *      *
 
-*      *      *                               *      *      *     
+*      *      *                             *      *      *     
 
-*      *      *                                       *      *   
+*      *      *                                    *      *   
 
-*                                                              *
+*                                                         *
 
 Code:
 
